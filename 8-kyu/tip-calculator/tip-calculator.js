@@ -1,4 +1,3 @@
- 
 function calculateTip(amount, rating) {
   rating = rating.toLowerCase();
 ​
