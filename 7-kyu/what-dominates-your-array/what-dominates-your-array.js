@@ -1,5 +1,5 @@
  
-function dominator(arr) {
+const dominator =(arr)=> {
   let obj = arr.reduce((acc,cur)=>{
       acc[cur]=(acc[cur]||0)+1;
       return acc
