@@ -1,12 +1,6 @@
-const findUniq =(arr)=> {
-  let obj =arr.reduce((acc,cur)=>{
+function findUniq(arr) {
+ return Object.entries(arr.reduce((acc,cur)=>{
     acc[cur]=(acc[cur]||0)+1
     return acc;
-  },{});
-  
-  for(let key in obj){
-  if(obj[key]<2){
-      return Number(key)
-  }
-  }
+  },{})).filter(([key,value])=>value ==1).join('')[0]
 }
