@@ -1,6 +1,7 @@
+ 
 const minimum =(a, x)=> {
   let num = 0;
-  for (let i = 0; i <= x; i++) {
+  for (let i = 0; i <= a; i++) {
     if ((a + i) % x === 0 || (a - i) % x === 0) {
       num = i;
       break; 
