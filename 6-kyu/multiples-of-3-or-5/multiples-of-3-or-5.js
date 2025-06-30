@@ -1,1 +1,1 @@
-const solution =n=>n<1?0:[...new Array(n).keys()].filter(val=>val%3==0||val%5==0).reduce((acc,cur)=>acc+cur,0);
+const solution =(number)=> number<1? 0:[...new Array(number).keys()].filter(val=>val%3==0 ||val%5==0).reduce((acc,cur)=>acc+cur,0)
