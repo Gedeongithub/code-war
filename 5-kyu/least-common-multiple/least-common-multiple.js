@@ -17,7 +17,7 @@
 // }
 ​
 function leastCommonMultiple(a, b) {
-  return Math.abs(a * b) / gcd(a, b);
+  return (a * b) / gcd(a, b);
 }
 ​
 function gcd(a, b) {
