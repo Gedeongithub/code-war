@@ -1,9 +1,8 @@
-const digitalRoot =(n)=> {
-    let sum = [...n.toString()];
-    while(sum.length>1){
-         let total =sum.reduce((acc,cur)=>Number(acc)+Number(cur),0);
-         sum = total.toString().split('')
-    }
-  return Number(sum[0])
+function digitalRoot(n) {
+  let sum =n.toString().split('');
+  while(sum.length>1){
+    let digit = sum.reduce((acc,cur)=>acc+ +cur,0);
+    sum = digit.toString().split('')
+  }
+  return +sum
 }
-​
