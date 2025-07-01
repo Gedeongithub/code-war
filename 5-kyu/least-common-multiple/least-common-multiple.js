@@ -1,4 +1,3 @@
- 
 function lcm(...numbers) {
   if(numbers.length == 0) return 1;
   
