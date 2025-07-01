@@ -1,3 +1,1 @@
-const arrayDiff =(a, b)=> a.filter(val=>!b.includes(val)) 
-  
-​
+const arrayDiff =(a, b)=> a.filter(val=>b.indexOf(val)== -1) 
