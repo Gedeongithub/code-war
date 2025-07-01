@@ -5,5 +5,5 @@ obj =obj.reduce((acc,cur)=>{
       acc[cur]? acc[cur]++:acc[cur]=1;
       return acc
   },{})
-  return obj['1']
+  return +obj['1']
 }
