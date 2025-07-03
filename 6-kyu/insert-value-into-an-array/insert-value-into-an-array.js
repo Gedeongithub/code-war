@@ -1,3 +1,4 @@
+ 
 Array.prototype.insert = function(index,val){
     let arr = this;
     if(val>arr.length){
@@ -9,6 +10,6 @@ Array.prototype.insert = function(index,val){
 }
 ​
 Object.defineProperty(Array.prototype,'insert',{
-  value.function(){},
+  value:function(){},
   enumerable:false
 })
