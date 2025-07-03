@@ -16,7 +16,7 @@ Object.defineProperty(Array.prototype,'insert',{
     }else{
     this.splice(index,0,val);
     }
-    return this
+    return this;
 },
   enumerable:false
 })
