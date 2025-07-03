@@ -1,4 +1,3 @@
- 
 function explode(x){
 let [q,w] = x;
   if(typeof q === 'number' && typeof w === 'number') return new Array(q+w).fill(x);
