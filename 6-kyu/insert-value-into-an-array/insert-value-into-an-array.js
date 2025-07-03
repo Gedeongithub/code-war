@@ -10,6 +10,14 @@ Array.prototype.insert = function(index,val){
 }
 ​
 Object.defineProperty(Array.prototype,'insert',{
-  value:function(){},
+  value:function(index,val){
+    let arr = this;
+    if(val>arr.length){
+        arr.push(val);
+        return arr;
+    };
+    arr.splice(index,0,val);
+    return arr
+},
   enumerable:false
 })
