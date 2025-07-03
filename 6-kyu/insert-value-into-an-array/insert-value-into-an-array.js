@@ -11,13 +11,12 @@
 ​
 Object.defineProperty(Array.prototype,'insert',{
   value:function(index,val){
-    let arr = this;
-    if(val>arr.length){
-        arr.push(val);
-        return arr;
-    };
-    arr.splice(index,0,val);
-    return arr
+    if( val >= this.length){
+        this.push(val);
+    }else{
+    this.splice(index,0,val);
+    }
+    return this
 },
   enumerable:false
 })
