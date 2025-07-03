@@ -1,4 +1,3 @@
- 
 Object.defineProperty(Array.prototype,'insert',{
   value:function(index,val){
     if( index >= this.length){
