@@ -1,17 +1,9 @@
-const findUniq =(arr)=>{
-   let sorted = arr.map(val=>{
-       let unique = [];
-       for(let i of val.toLowerCase().split('').sort().join``){
-           if(!unique.includes(i)){
-               unique.push(i)
-           }
-       }
-       return unique.join``
-   })
-   for(let element of sorted){
-       if(sorted.indexOf(element)== sorted.lastIndexOf(element)){
-           return arr[sorted.indexOf(element)]
-       }
-   }
+function findUniq(arr){
+    let unique = arr.map(val=>{
+        return [...val.toLowerCase()].sort().reduce((acc,char)=>{
+            if(!acc.includes(char)) acc+=char
+            return acc
+        },'')
+    })
+    return arr[unique.indexOf(unique.find((val,_,arr)=>arr.indexOf(val)===arr.lastIndexOf(val)))]
 }
-​
