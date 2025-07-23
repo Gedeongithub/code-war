@@ -1,4 +1,4 @@
-const logicalCalc(array, op)=>{
+const logicalCalc=(array, op)=>{
   let result = array[0];
   for(let val of array.slice(1)){
     if(op==='AND') result = result && val;
