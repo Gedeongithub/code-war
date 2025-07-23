@@ -1,7 +1,8 @@
 function logicalCalc(array, op){
-  return array.reduce((acc,cur)=>{
-    if(op==='AND') return acc&&cur;
-    if(op === 'OR') return acc||cur;
-    if(op==='XOR') return acc!==cur
-  })
+  let result = array[0];
+  for(let val or array){
+    if(op==='AND') result = result && val;
+    if(op=== 'XOR') result = result !== val
+    if(op === 'OR') result = result || val
+  }
 }
