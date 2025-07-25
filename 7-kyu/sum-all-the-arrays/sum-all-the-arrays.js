@@ -1,9 +1,4 @@
-const arraySum =(arr)=> {
-  let fla = arr.flat(Infinity)
-  let sum = 0;
-  for(let i =0; i<=fla.length; i++){
-     let number = fla[i]
-     if(typeof number === 'number') sum+=number
-  }
-  return sum
+ 
+function arraySum(arr) {
+ return arr.toString().split(',').map(val=>+val).filter(val=>!Number(isNaN(val))).reduce((acc,cur)=>acc+cur)
 }
