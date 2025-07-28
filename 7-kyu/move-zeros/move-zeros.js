@@ -5,4 +5,5 @@ let zeros = arrNum.filter(val=>val==0),nonZeros = arrNum.filter(val=>val!==0);
   }else{
     return [...zeros,...nonZeros]
   }
+  return [...nonZeros,...zeros]
 }
