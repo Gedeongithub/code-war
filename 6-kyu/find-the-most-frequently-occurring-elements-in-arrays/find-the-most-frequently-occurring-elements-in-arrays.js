@@ -1,3 +1,4 @@
+ 
 function getMostFrequent(json) {
     return json.temperature.map(val=>{
             let frequencyMap ={};
@@ -7,7 +8,7 @@ function getMostFrequent(json) {
             let max = Math.max(...Object.values(frequencyMap));
             let mostFrequent = []
             for(let key in frequencyMap){
-              if(obj[key]=== max) mostFrequent.push(Number(key))
+              if(frequencyMap[key]=== max) mostFrequent.push(Number(key))
           }
         return Math.max(...mostFrequent)
     })
