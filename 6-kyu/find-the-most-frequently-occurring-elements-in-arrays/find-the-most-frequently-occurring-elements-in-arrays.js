@@ -1,5 +1,6 @@
+ 
 function getMostFrequent(json) {
-    return Array.from(json).map(val=>{
+    return temperature.json.map(val=>{
             let obj ={};
             for(let element of val ){
               obj[element]=(obj[element]||0)+1
