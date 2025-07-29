@@ -1,7 +1,7 @@
 function getMostFrequent(json) {
     return json.temperature.map(val=>{
             let obj ={};
-            for(let element of val.sort((a,b)=>b-a) ){
+            for(let element of val.sort((a,b)=>a-b) ){
               obj[element]=(obj[element]||0)+1
             }
             let max = Math.max(...Object.values(obj));
