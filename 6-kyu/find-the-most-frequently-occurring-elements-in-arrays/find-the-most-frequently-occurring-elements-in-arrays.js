@@ -1,5 +1,5 @@
 function getMostFrequent(json) {
-    return json.map(val=>{
+    return Array.from(json).map(val=>{
             let obj ={};
             for(let element of val ){
               obj[element]=(obj[element]||0)+1
