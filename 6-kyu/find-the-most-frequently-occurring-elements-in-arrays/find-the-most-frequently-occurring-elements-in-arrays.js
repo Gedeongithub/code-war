@@ -5,8 +5,8 @@ function getMostFrequent(json) {
               obj[element]=(obj[element]||0)+1
             }
               let objArray = Object.values(obj).sort((a,b)=>b-a);
-      console.log(objArray)
-            let max = Math.max(...Object.values(obj));
+//       console.log(objArray)
+            let max = Math.max(...objArray);
             for(let key in obj){
               if(obj[key]=== max) return key
           }
